@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linha do Tempo da IA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="grid-overlay"></div>
+  <h1>História da Inteligência Artificial</h1>
+  <p>Uma jornada tecnológica de 1943 até a era dos Modelos de Linguagem</p>
+  <div class="scroll-indicator"></div>
+</header>
+
+<section class="filters">
+  <button data-filter="all" class="active">Todos</button>
+  <button data-filter="1940-1980">1940–1980</button>
+  <button data-filter="1980-2000">1980–2000</button>
+  <button data-filter="2000+">2000+</button>
+</section>
+
+<section class="timeline">
+
+  <div class="timeline-item" data-period="1940-1980">
+    <div class="card">
+      <span class="year">1943</span>
+      <h3>Primeiro Neurônio Artificial</h3>
+      <p>McCulloch & Pitts criam modelo matemático inspirado no cérebro.</p>
+      <button class="details-btn">Ver detalhes</button>
+    </div>
+  </div>
+
+  <div class="timeline-item" data-period="1940-1980">
+    <div class="card">
+      <span class="year">1950</span>
+      <h3>Teste de Turing</h3>
+      <p>Proposta para avaliar inteligência em máquinas.</p>
+      <button class="details-btn">Ver detalhes</button>
+    </div>
+  </div>
+
+  <div class="timeline-item" data-period="1940-1980">
+    <div class="card">
+      <span class="year">1956</span>
+      <h3>Conferência de Dartmouth</h3>
+      <p>Nascimento oficial da Inteligência Artificial.</p>
+      <button class="details-btn">Ver detalhes</button>
+    </div>
+  </div>
+
+  <div class="timeline-item inverno" data-period="1940-1980">
+    <div class="card">
+      <span class="year">1969</span>
+      <h3>Perceptrons & Inverno da IA</h3>
+      <p>Críticas às redes neurais reduzem investimentos.</p>
+      <button class="details-btn">Ver detalhes</button>
+    </div>
+  </div>
+
+  <div class="timeline-item" data-period="1980-2000">
+    <div class="card">
+      <span class="year">1986</span>
+      <h3>Backpropagation</h3>
+      <p>Algoritmo impulsiona o retorno das redes neurais.</p>
+      <button class="details-btn">Ver detalhes</button>
+    </div>
+  </div>
+
+  <div class="timeline-item" data-period="1980-2000">
+    <div class="card">
+      <span class="year">1997</span>
+      <h3>Deep Blue</h3>
+      <p>Computador derrota campeão mundial de xadrez.</p>
+      <button class="details-btn">Ver detalhes</button>
+    </div>
+  </div>
+
+  <div class="timeline-item" data-period="2000+">
+    <div class="card">
+      <span class="year">2012</span>
+      <h3>AlexNet</h3>
+      <p>Revolução no Deep Learning com ImageNet.</p>
+      <button class="details-btn">Ver detalhes</button>
+    </div>
+  </div>
+
+  <div class="timeline-item" data-period="2000+">
+    <div class="card">
+      <span class="year">2016</span>
+      <h3>AlphaGo</h3>
+      <p>IA derrota campeão mundial de Go.</p>
+      <button class="details-btn">Ver detalhes</button>
+    </div>
+  </div>
+
+  <div class="timeline-item" data-period="2000+">
+    <div class="card">
+      <span class="year">2022+</span>
+      <h3>Modelos de Linguagem (LLMs)</h3>
+      <p>Popularização da IA generativa em escala global.</p>
+      <button class="details-btn">Ver detalhes</button>
+    </div>
+  </div>
+
+</section>
+
+<section class="literature">
+  <h2>Literatura Fundamental</h2>
+  <div class="books">
+    <div class="book-card">Artificial Intelligence: A Modern Approach (1995)</div>
+    <div class="book-card">Perceptrons (1969)</div>
+    <div class="book-card">Gödel, Escher, Bach (1979)</div>
+    <div class="book-card">The Quest for Artificial Intelligence (2009)</div>
+    <div class="book-card">Superintelligence (2014)</div>
+  </div>
+</section>
+
+<section class="future">
+  <h2>O Futuro da IA</h2>
+  <p>AGI, ética, regulamentação global, impactos sociais e econômicos.</p>
+</section>
+
+<button id="topBtn">↑</button>
+
+<div class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
